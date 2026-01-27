@@ -1,0 +1,19 @@
+# Шрифты
+font_family      CaskaydiaMono Nerd Font
+font_size        14.0
+
+# Отступы (pad=5x4 в foot)
+window_padding_width 4 5
+
+# Декорации (убираем заголовок для niri)
+hide_window_decorations yes
+confirm_os_window_close 0
+
+# Прозрачность
+#background_opacity 0.95
+
+# Оболочка
+shell /usr/bin/fish
+
+# Тема (Kitty умеет инклудить файлы)
+include themes/noctalia.conf
