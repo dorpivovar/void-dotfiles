@@ -1,8 +1,16 @@
-if status is-login
-    if test -z "$DISPLAY" -a (tty) = "/dev/tty1"
-        exec dbus-run-session niri
-    end
-end
+# if status is-login
+#     if test -z "$DISPLAY" -a (tty) = "/dev/tty1"
+#         # Переменные для окружения
+#         set -gx XDG_CURRENT_DESKTOP niri
+#         set -gx XDG_SESSION_TYPE wayland
+#                  # Переменные для тем Qt
+#         set -gx QT_QPA_PLATFORMTHEME qt6ct
+#         set -gx QT_QPA_PLATFORM wayland
+         
+#         # Запуск сессии
+#         exec dbus-run-session niri --session
+#     end
+# end
 
 ### --- УПРАВЛЕНИЕ ПРОКСИ --- ###
 # Замени адрес и порт на свои (например, 127.0.0.1:1080)
@@ -53,6 +61,8 @@ abbr -a conf-fish 'nano ~/.config/fish/config.fish'
 abbr -a conf-niri 'nano ~/.config/niri/config.kdl'
 abbr -a conf-term 'nano ~/.config/kitty/kitty.conf'
 
+abbr -a cat 'bat'
+
 ### --- ФУНКЦИИ --- ###
 
 # Создать директорию и сразу зайти в нее
@@ -62,3 +72,4 @@ function mkcd
 end
 
 set fish_greeting # Убирает приветствие при запуске
+# starship init fish | source

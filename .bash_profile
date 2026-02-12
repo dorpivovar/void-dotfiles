@@ -14,6 +14,6 @@ export QT_QPA_PLATFORM="wayland;xcb"
 export GTK_THEME=adw-gtk3
 export QT_QPA_PLATFORMTHEME=qt6ct
 
-if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
-    exec dbus-run-session niri --session
-fi
+# if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
+#     exec dbus-run-session niri --session
+# fi

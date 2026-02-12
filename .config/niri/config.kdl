@@ -48,6 +48,8 @@ layout {
     always-center-single-column
     center-focused-column "never"
 //  center-focused-column "on-overflow"
+    
+
 
 
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
@@ -192,6 +194,7 @@ layout {
         // top 64
         // bottom 64
     }
+    background-color "transparent"
 }
 
 // Add lines like this to spawn processes at startup.
@@ -199,6 +202,8 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
+// spawn-at-startup "dbus-update-activation-environment" "--all"
+// spawn-at-startup "/usr/libexec/xdg-desktop-portal" "-r"
 spawn-at-startup "pipewire"
 spawn-at-startup "gsettings" "set" "org.gnome.desktop.interface" "gtk-theme" "adw-gtk3"
 spawn-at-startup "gsettings" "set" "org.gnome.desktop.interface" "color-scheme" "prefer-dark"
@@ -274,8 +279,20 @@ window-rule {
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
+    draw-border-with-background false
     geometry-corner-radius 12
     clip-to-geometry true
+//    opacity 1.0
+}
+// window-rule {
+//     match is-active=true
+//     opacity 0.85
+// }
+
+window-rule {
+        match app-id="com.interversehq.qView"        
+        open-floating true        
+	default-column-width { proportion 0.6; }
 }
 
 debug {
@@ -288,11 +305,15 @@ layer-rule {
   place-within-backdrop true
 }
 
+// layer-rule {
+//  match namespace="^noctalia-wallpaper*"
+//  place-within-backdrop true  
+// }
 
 binds {
     // Core Noctalia binds
     Mod+D { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
-    Mod+S { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
+    //Mod+S { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "controlCenter" "toggle"; }
     // Mod+Comma { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle"; }
 
     // Audio controls
@@ -579,9 +600,14 @@ binds {
     // The quit action will show a confirmation dialog to avoid accidental exits.
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
-
+    Mod+Shift+S { spawn "sh" "-c" "grim -g \"$(slurp)\" - | swappy -f -"; }
+    Mod+S { spawn "sh" "-c" "grim -g \"$(slurp)\" - | wl-copy"; }
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
-    Mod+Shift+P { power-off-monitors; }
+    // Mod+Shift+P { power-off-monitors; }
+    Mod+Shift+P { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "settings" "toggle"; }
+    Mod+Shift+Q { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
+    Mod+Shift+W { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "toggle"; }
+    Mod+Shift+N { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "random"; }
 }
 include "./noctalia.kdl"
