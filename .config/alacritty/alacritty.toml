@@ -1,15 +1,27 @@
-# font: CaskaydiaMono Nerd Font
 [general]
 import = [
     "~/.config/alacritty/themes/noctalia.toml"
 ]
 
 [font]
-size = 14
+size = 14.5
 
 [font.normal]
-family = "CaskaydiaMono Nerd Font"
-style = "Regular"
+# Используем JetBrains Mono, так как мы настраивали его ранее
+family = "JetBrainsMono Nerd Font"
+style = "SemiBold"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "SemiBold Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
 
 [window.padding]
 x = 10
