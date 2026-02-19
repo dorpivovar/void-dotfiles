@@ -40,6 +40,13 @@ function proxy_off
     echo "Прокси выключен"
 end
 
+function chafa --description 'Вызов chafa с исправлением фантомных нажатий'
+    # --polite on отключает агрессивный опрос терминала
+    # --watch off предотвращает лишние прерывания
+    # < /dev/null перенаправляет ввод, чтобы ответы терминала не попадали в буфер
+    command chafa --polite on --watch off $argv < /dev/null
+end
+
 ### --- ПСЕВДОНИМЫ И АББРЕВИАТУРЫ (ABBR) --- ###
 
 # Системное инфо
@@ -62,6 +69,8 @@ abbr -a conf-niri 'nano ~/.config/niri/config.kdl'
 abbr -a conf-term 'nano ~/.config/kitty/kitty.conf'
 
 abbr -a cat 'bat'
+
+alias vim="nvim"
 
 ### --- ФУНКЦИИ --- ###
 

@@ -21,7 +21,6 @@
     {
         "key": "OS Age",
 	"type": "disk",
-	"keyColor": "97",
 	"folders": "/",
 	"format": "{days} days ({create-time:10})"
     },

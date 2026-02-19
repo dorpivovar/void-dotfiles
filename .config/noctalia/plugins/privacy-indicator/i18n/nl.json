@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "hideInactive": {
+      "desc": "Verberg de pictogrammen voor microfoon, camera en scherm wanneer ze inactief zijn.",
+      "label": "Inactieve status verbergen"
+    },
+    "iconSpacing": {
+      "desc": "Stel de afstand tussen de pictogrammen in.",
+      "label": "Pictogramafstand"
+    },
+    "removeMargins": {
+      "desc": "Verwijdert alle buitenste marges van de widget.",
+      "label": "Marges verwijderen"
+    }
+  },
+  "tooltip": {
+    "cam-on": "Camera: {apps}",
+    "mic-on": "Microfoon: {apps}",
+    "screen-on": "Schermdeling: {apps}"
+  },
+  "toast": {
+    "cam-on": "Camera is actief",
+    "mic-on": "Microfoon is actief",
+    "screen-on": "Scherm delen is actief"
+  }
+}

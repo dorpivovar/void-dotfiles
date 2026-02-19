@@ -1,0 +1,19 @@
+# font: CaskaydiaMono Nerd Font
+[general]
+import = [
+    "~/.config/alacritty/themes/noctalia.toml"
+]
+
+[font]
+size = 14
+
+[font.normal]
+family = "CaskaydiaMono Nerd Font"
+style = "Regular"
+
+[window.padding]
+x = 10
+y = 5
+
+[window]
+decorations = "None"
