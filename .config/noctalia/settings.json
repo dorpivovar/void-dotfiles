@@ -144,7 +144,8 @@
                     "pinned": [
                         "Telegram Desktop",
                         "Microsoft Teams",
-                        "steam"
+                        "steam",
+                        "Загрузка: 0 Б/с\nОтдача: 0 Б/с"
                     ]
                 },
                 {
@@ -567,10 +568,6 @@
             },
             {
                 "enabled": true,
-                "id": "telegram"
-            },
-            {
-                "enabled": true,
                 "id": "cava"
             },
             {
@@ -591,10 +588,6 @@
             },
             {
                 "enabled": true,
-                "id": "code"
-            },
-            {
-                "enabled": true,
                 "id": "yazi"
             },
             {
@@ -612,9 +605,9 @@
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
         "boxBorderEnabled": false,
-        "fontDefault": "CaskaydiaMono NF",
+        "fontDefault": "JetBrainsMonoNL NF",
         "fontDefaultScale": 1,
-        "fontFixed": "CaskaydiaMono NF",
+        "fontFixed": "JetBrainsMonoNL NF",
         "fontFixedScale": 1,
         "networkPanelView": "wifi",
         "panelBackgroundOpacity": 0.93,
