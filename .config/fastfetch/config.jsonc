@@ -36,14 +36,18 @@
     },
     {
       "type": "shell",
-      "key": " sh",
+      "key": " sh",
+      "keyColor": "green"
+    },
+    {
+      "type": "terminal",
+      "key": " term",
       "keyColor": "green"
     },
     {
       "type": "wm",
       "key": "󱂬 wm",
-      "keyColor": "red",
-      "format": "{1} {5/(.*) (unknown/$1/}"
+      "keyColor": "red"
     },
     {
       "type": "cpu",
