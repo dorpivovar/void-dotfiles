@@ -6,13 +6,6 @@
   <img src="./assets/screenshots/preview-desktop.png" alt="Desktop preview" width="900" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Linux-Wayland-3b82f6?style=for-the-badge&logo=linux&logoColor=white" alt="Linux Wayland" />
-  <img src="https://img.shields.io/badge/WM-niri-0f172a?style=for-the-badge" alt="niri" />
-  <img src="https://img.shields.io/badge/Shell-fish-16a34a?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="fish" />
-  <img src="https://img.shields.io/badge/Terminals-kitty%20%7C%20alacritty%20%7C%20foot-7c3aed?style=for-the-badge" alt="terminals" />
-</p>
-
 ## 📸 Screenshots
 
 <p align="center">
