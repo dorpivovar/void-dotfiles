@@ -1,0 +1,36 @@
+# OS / filesystem
+.DS_Store
+Thumbs.db
+.Trashes
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs / runtime
+*.log
+*.pid
+*.seed
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Local environment / secrets
+.env
+.env.*
+*.local
+*.secret
+secrets/
+
+# Temporary files
+tmp/
+temp/
+.cache/
+.themes/
+.icons/
