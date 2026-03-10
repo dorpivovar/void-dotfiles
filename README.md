@@ -24,30 +24,26 @@
 
 | Category | Used |
 | --- | --- |
-| Distribution | Void Linux |
-| WM / Compositor | niri |
-| Shell | fish |
-| Prompt | starship |
-| System Shell / Panel | Noctalia Shell |
-| Terminal (primary) | foot |
-| Terminal (extra) | kitty, alacritty |
-| System Monitoring | btop |
-| System Info | fastfetch |
-| Wayland Portals | xdg-desktop-portal |
+| Distro | [Void Linux](https://voidlinux.org/) |
+| Wayland Compositor | [niri](https://github.com/niri-wm/niri) |
+| Shell | [fish](https://fishshell.com/) |
+| Prompt | [starship](https://starship.rs/) |
+| System Shell / Panel | [Noctalia Shell](https://noctalia.dev/) |
+| Terminal Emulator| [foot](https://codeberg.org/dnkl/foot) |
 
 ## 🚀 Installation
 
-### 1) Clone
+### 1) Install packages (Void Linux)
 
 ```bash
-git clone https://github.com/<your-username>/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
+sudo xbps-install -S git stow
 ```
 
-### 2) Install packages (Void Linux)
+### 2) Clone
 
 ```bash
-doas xbps-install -S git stow fish starship kitty alacritty foot btop fastfetch
+git clone https://github.com/dorpivovar/void-dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
 ```
 
 ### 3) Deploy
@@ -55,37 +51,3 @@ doas xbps-install -S git stow fish starship kitty alacritty foot btop fastfetch
 ```bash
 stow .
 ```
-
-## 🗂 Structure
-
-```text
-.bash_profile
-.config/
-  alacritty/
-  btop/
-  fastfetch/
-  fish/
-  foot/
-  kitty/
-  niri/
-  noctalia/
-  xdg-desktop-portal/
-.icons/
-.themes/
-assets/
-  screenshots/
-```
-
-## ⚡ Useful Commands
-
-- `ff` — run `fastfetch`
-- `pon` / `poff` — enable/disable proxy
-- `xi` / `xr` / `xu` / `xf` — quick `xbps` commands
-- `conf-fish`, `conf-niri`, `conf-term` — quick access to key config files
-
-## 🛠 Customization
-
-- `kitty` theme: `.config/kitty/current-theme.conf`
-- `alacritty` theme: `.config/alacritty/themes/noctalia.toml`
-- Main WM config: `.config/niri/config.kdl`
-- Main shell config: `.config/fish/config.fish`
