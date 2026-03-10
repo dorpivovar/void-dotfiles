@@ -69,6 +69,7 @@ abbr -a conf-niri 'nano ~/.config/niri/config.kdl'
 abbr -a conf-term 'nano ~/.config/kitty/kitty.conf'
 
 abbr -a cat 'bat'
+abbr -a py 'python'
 
 alias vim="nvim"
 
@@ -81,4 +82,4 @@ function mkcd
 end
 
 set fish_greeting # Убирает приветствие при запуске
-# starship init fish | source
+starship init fish | source

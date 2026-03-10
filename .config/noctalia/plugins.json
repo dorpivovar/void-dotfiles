@@ -7,8 +7,8 @@
         }
     ],
     "states": {
-        "activate-linux": {
-            "enabled": false,
+        "niri-overview-launcher": {
+            "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "privacy-indicator": {
@@ -17,6 +17,10 @@
         },
         "translator": {
             "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "update-count": {
+            "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         }
     },
