@@ -42,34 +42,34 @@
     {
       "type": "terminal",
       "key": " term",
-      "keyColor": "green"
+      "keyColor": "red"
     },
     {
       "type": "wm",
       "key": "󱂬 wm",
-      "keyColor": "red"
+      "keyColor": "blue"
     },
     {
       "type": "cpu",
       "key": " cpu",
-      "keyColor": "blue",
+      "keyColor": "magenta",
       "format": "{1}"
     },
     {
       "type": "disk",
       "key": "󰋊 disk",
-      "keyColor": "magenta",
+      "keyColor": "yellow",
       "folders": "/"
     },
     {
       "type": "memory",
       "key": " ram",
-      "keyColor": "yellow"
+      "keyColor": "cyan"
     },
     {
       "type": "command",
       "key": "󰅐 age",
-      "keyColor": "cyan",
+      "keyColor": "green",
       "text": "birth_install=$(stat -c %W /); echo \"$(( ($(date +%s) - birth_install) / 86400 )) days\""
     },
     { "type": "break" },
