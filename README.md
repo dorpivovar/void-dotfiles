@@ -16,8 +16,8 @@
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="./assets/screenshots/preview-terms.svg" alt="Terminals preview" width="49%" />
-  <img src="./assets/screenshots/preview-shell.svg" alt="Shell preview" width="49%" />
+  <img src="./assets/screenshots/preview-terms.png" alt="Terminals preview" width="49%" />
+  <img src="./assets/screenshots/preview-sys-shell.png" alt="Shell preview" width="49%" />
 </p>
 
 ## 📊 Program Mapping
