@@ -26,8 +26,7 @@
 | --- | --- |
 | Distro | [Void Linux](https://voidlinux.org/) |
 | Wayland Compositor | [niri](https://github.com/niri-wm/niri) |
-| Shell | [fish](https://fishshell.com/) |
-| Prompt | [starship](https://starship.rs/) |
+| Shell | [fish](https://fishshell.com/) + [starship](https://starship.rs/)|
 | System Shell / Panel | [Noctalia Shell](https://noctalia.dev/) |
 | Terminal Emulator| [foot](https://codeberg.org/dnkl/foot) |
 
