@@ -8,7 +8,9 @@
         "customLaunchPrefixEnabled": false,
         "density": "default",
         "enableClipPreview": true,
+        "enableClipboardChips": true,
         "enableClipboardHistory": true,
+        "enableClipboardSmartIcons": true,
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
@@ -23,7 +25,6 @@
         "showIconBackground": false,
         "sortByMostUsed": true,
         "terminalCommand": "foot -e",
-        "useApp2Unit": false,
         "viewMode": "list"
     },
     "audio": {
@@ -31,6 +32,7 @@
         ],
         "preferredPlayer": "",
         "spectrumFrameRate": 30,
+        "spectrumMirrored": true,
         "visualizerType": "linear",
         "volumeFeedback": false,
         "volumeFeedbackSoundFile": "",
@@ -47,7 +49,7 @@
         "contentPadding": 2,
         "density": "default",
         "displayMode": "always_visible",
-        "floating": false,
+        "enableExclusionZoneInset": true,
         "fontScale": 1,
         "frameRadius": 12,
         "frameThickness": 8,
@@ -61,8 +63,8 @@
         ],
         "mouseWheelAction": "none",
         "mouseWheelWrap": true,
-        "outerCorners": true,
-        "position": "left",
+        "outerCorners": false,
+        "position": "top",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
         "rightClickCommand": "",
@@ -89,7 +91,7 @@
             "left": [
                 {
                     "colorizeDistroLogo": false,
-                    "colorizeSystemIcon": "primary",
+                    "colorizeSystemIcon": "tertiary",
                     "customIconPath": "",
                     "enableColorization": true,
                     "icon": "alien",
@@ -112,6 +114,7 @@
                     "occupiedColor": "secondary",
                     "pillSize": 0.6,
                     "showApplications": false,
+                    "showApplicationsHover": false,
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
@@ -120,7 +123,7 @@
                     "colorizeIcons": false,
                     "hideMode": "hidden",
                     "id": "ActiveWindow",
-                    "maxWidth": 145,
+                    "maxWidth": 200,
                     "scrollingMode": "hover",
                     "showIcon": true,
                     "textColor": "none",
@@ -131,13 +134,13 @@
                     "hideMode": "hidden",
                     "hideWhenIdle": false,
                     "id": "MediaMini",
-                    "maxWidth": 145,
+                    "maxWidth": 200,
                     "panelShowAlbumArt": true,
                     "scrollingMode": "hover",
                     "showAlbumArt": true,
-                    "showArtistFirst": true,
+                    "showArtistFirst": false,
                     "showProgressRing": true,
-                    "showVisualizer": false,
+                    "showVisualizer": true,
                     "textColor": "none",
                     "useFixedWidth": false,
                     "visualizerType": "linear"
@@ -156,7 +159,11 @@
                         "Telegram Desktop",
                         "Microsoft Teams",
                         "steam",
-                        "Загрузка: 0 Б/с\nОтдача: 0 Б/с"
+                        "Загрузка: 0 Б/с\nОтдача: 0 Б/с",
+                        "j3HSHSxv8K",
+                        "spotify-client",
+                        "[Tun]\nIblis",
+                        "Vesktop"
                     ]
                 },
                 {
@@ -166,15 +173,6 @@
                     "id": "NotificationHistory",
                     "showUnreadBadge": true,
                     "unreadBadgeColor": "primary"
-                },
-                {
-                    "deviceNativePath": "BATT",
-                    "displayMode": "graphic",
-                    "hideIfIdle": false,
-                    "hideIfNotDetected": false,
-                    "id": "Battery",
-                    "showNoctaliaPerformance": false,
-                    "showPowerProfiles": true
                 },
                 {
                     "defaultSettings": {
@@ -189,6 +187,22 @@
                     "id": "plugin:privacy-indicator"
                 },
                 {
+                    "displayMode": "forceOpen",
+                    "iconColor": "none",
+                    "id": "KeyboardLayout",
+                    "showIcon": false,
+                    "textColor": "none"
+                },
+                {
+                    "deviceNativePath": "BATT",
+                    "displayMode": "graphic",
+                    "hideIfIdle": false,
+                    "hideIfNotDetected": false,
+                    "id": "Battery",
+                    "showNoctaliaPerformance": false,
+                    "showPowerProfiles": true
+                },
+                {
                     "displayMode": "onhover",
                     "iconColor": "none",
                     "id": "Volume",
@@ -196,17 +210,15 @@
                     "textColor": "none"
                 },
                 {
-                    "applyToAllMonitors": false,
                     "displayMode": "onhover",
                     "iconColor": "none",
-                    "id": "Brightness",
+                    "id": "Bluetooth",
                     "textColor": "none"
                 },
                 {
-                    "displayMode": "alwaysHide",
+                    "displayMode": "onhover",
                     "iconColor": "none",
-                    "id": "KeyboardLayout",
-                    "showIcon": false,
+                    "id": "Network",
                     "textColor": "none"
                 },
                 {
@@ -263,7 +275,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Everforest",
+        "predefinedScheme": "Tokyo Night",
         "schedulingMode": "off",
         "useWallpaperColors": false
     },
@@ -327,6 +339,7 @@
     "desktopWidgets": {
         "enabled": true,
         "gridSnap": false,
+        "gridSnapScale": false,
         "monitorWidgets": [
             {
                 "name": "eDP-1",
@@ -353,8 +366,10 @@
         "indicatorColor": "primary",
         "indicatorOpacity": 0.6,
         "indicatorThickness": 3,
+        "launcherIcon": "",
         "launcherIconColor": "none",
         "launcherPosition": "end",
+        "launcherUseDistroLogo": false,
         "monitors": [
         ],
         "onlySameOutput": true,
@@ -422,9 +437,9 @@
         "reverseScroll": false,
         "scaleRatio": 1,
         "screenRadiusRatio": 1,
-        "shadowDirection": "bottom_right",
-        "shadowOffsetX": 2,
-        "shadowOffsetY": 3,
+        "shadowDirection": "center",
+        "shadowOffsetX": 0,
+        "shadowOffsetY": 0,
         "showChangelogOnStartup": true,
         "showHibernateOnLockScreen": false,
         "showScreenCorners": false,
@@ -432,6 +447,7 @@
         "telemetryEnabled": false
     },
     "hooks": {
+        "colorGeneration": "",
         "darkModeChange": "",
         "enabled": false,
         "performanceModeDisabled": "",
@@ -479,8 +495,7 @@
         "bluetoothRssiPollingEnabled": false,
         "disableDiscoverability": false,
         "networkPanelView": "wifi",
-        "wifiDetailsViewMode": "list",
-        "wifiEnabled": true
+        "wifiDetailsViewMode": "list"
     },
     "nightLight": {
         "autoSchedule": true,
@@ -543,12 +558,13 @@
         "overlayLayer": true
     },
     "plugins": {
-        "autoUpdate": false
+        "autoUpdate": false,
+        "notifyUpdates": true
     },
     "sessionMenu": {
         "countdownDuration": 10000,
         "enableCountdown": true,
-        "largeButtonsLayout": "grid",
+        "largeButtonsLayout": "single-row",
         "largeButtonsStyle": false,
         "position": "center",
         "powerOptions": [
@@ -599,7 +615,7 @@
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
-                "keybind": ""
+                "keybind": "7"
             },
             {
                 "action": "userspaceReboot",
@@ -612,7 +628,7 @@
         "showHeader": true,
         "showKeybinds": true
     },
-    "settingsVersion": 57,
+    "settingsVersion": 59,
     "systemMonitor": {
         "batteryCriticalThreshold": 5,
         "batteryWarningThreshold": 20,
@@ -640,10 +656,6 @@
         "activeTemplates": [
             {
                 "enabled": true,
-                "id": "gtk"
-            },
-            {
-                "enabled": true,
                 "id": "pywalfox"
             },
             {
@@ -653,10 +665,6 @@
             {
                 "enabled": true,
                 "id": "niri"
-            },
-            {
-                "enabled": true,
-                "id": "qt"
             },
             {
                 "enabled": true,
@@ -681,21 +689,31 @@
             {
                 "enabled": true,
                 "id": "foot"
+            },
+            {
+                "enabled": true,
+                "id": "gtk"
+            },
+            {
+                "enabled": true,
+                "id": "qt"
             }
         ],
         "enableUserTheming": false
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "JetBrainsMonoNL NF",
+        "fontDefault": "Roboto",
         "fontDefaultScale": 1,
         "fontFixed": "JetBrainsMonoNL NF",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
+        "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "attached",
         "settingsPanelSideBarCardStyle": false,
-        "tooltipsEnabled": true
+        "tooltipsEnabled": true,
+        "translucentWidgets": false
     },
     "wallpaper": {
         "automationEnabled": false,
@@ -708,6 +726,11 @@
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
         "monitorDirectories": [
+            {
+                "directory": "/home/dorpivovar/Изображения/Wallpapers",
+                "name": "eDP-1",
+                "wallpaper": ""
+            }
         ],
         "overviewBlur": 0.4,
         "overviewEnabled": true,
@@ -718,10 +741,18 @@
         "showHiddenFiles": true,
         "skipStartupTransition": false,
         "solidColor": "#1a1a2e",
-        "sortOrder": "name",
+        "sortOrder": "date_desc",
         "transitionDuration": 1500,
         "transitionEdgeSmoothness": 0.05,
-        "transitionType": "random",
+        "transitionType": [
+            "fade",
+            "disc",
+            "stripes",
+            "wipe",
+            "pixelate",
+            "honeycomb"
+        ],
+        "useOriginalImages": false,
         "useSolidColor": false,
         "useWallhaven": false,
         "viewMode": "single",
@@ -729,7 +760,7 @@
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "arknights",
+        "wallhavenQuery": "",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",

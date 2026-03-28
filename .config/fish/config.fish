@@ -4,8 +4,8 @@
 #         set -gx XDG_CURRENT_DESKTOP niri
 #         set -gx XDG_SESSION_TYPE wayland
 #                  # Переменные для тем Qt
-#         set -gx QT_QPA_PLATFORMTHEME qt6ct
-#         set -gx QT_QPA_PLATFORM wayland
+set -gx QT_QPA_PLATFORMTHEME qt6ct
+set -gx QT_QPA_PLATFORM wayland
          
 #         # Запуск сессии
 #         exec dbus-run-session niri --session
@@ -40,13 +40,6 @@ function proxy_off
     echo "Прокси выключен"
 end
 
-function chafa --description 'Вызов chafa с исправлением фантомных нажатий'
-    # --polite on отключает агрессивный опрос терминала
-    # --watch off предотвращает лишние прерывания
-    # < /dev/null перенаправляет ввод, чтобы ответы терминала не попадали в буфер
-    command chafa --polite on --watch off $argv < /dev/null
-end
-
 ### --- ПСЕВДОНИМЫ И АББРЕВИАТУРЫ (ABBR) --- ###
 
 # Системное инфо
@@ -72,6 +65,7 @@ abbr -a cat 'bat'
 abbr -a py 'python'
 
 alias vim="nvim"
+alias nekobox="doas env DISPLAY=$DISPLAY WAYLAND_DISPLAY=$WAYLAND_DISPLAY XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR /opt/nekobox-5.10.27-x86_64-linux.AppImage"
 
 ### --- ФУНКЦИИ --- ###
 

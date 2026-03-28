@@ -8,18 +8,22 @@ size = 14.5
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
-style = "SemiBold"
+#family = 'Terminus'
+style = "Bold"
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
+#family = 'Terminus'
 style = "Bold"
 
 [font.italic]
 family = "JetBrainsMono Nerd Font"
+#family = 'Terminus'
 style = "SemiBold Italic"
 
 [font.bold_italic]
 family = "JetBrainsMono Nerd Font"
+#family = 'Terminus'
 style = "Bold Italic"
 
 [window.padding]
@@ -28,3 +32,5 @@ y = 5
 
 [window]
 decorations = "None"
+opacity = 0.85
+# blur = true
